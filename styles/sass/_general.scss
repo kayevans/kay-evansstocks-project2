@@ -1,0 +1,35 @@
+// wrapper styles
+.wrapper{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+// body styles
+body{
+    font-family: $baseFont;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: $primaryFont;
+}
+
+// heading heirarchy
+h1,
+h2,
+h3,
+.title{
+    font-family: $headingFont;
+    text-transform: uppercase;
+}
+
+// remove default link styles
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+// remove default list styles
+li{
+    list-style: none;
+}
