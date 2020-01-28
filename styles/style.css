@@ -265,10 +265,14 @@ body {
 }
 
 h1,
+.title {
+  font-family: "Lora", serif;
+}
+
+h1,
 h2,
 h3,
 .title {
-  font-family: "Lora", serif;
   text-transform: uppercase;
 }
 
@@ -320,11 +324,11 @@ li {
   margin: 0 20px;
 }
 
-.home {
+header.home {
   background-color: #F6A823;
 }
 
-.home .headerContent .wrapper {
+header.home .headerContent .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,26 +347,29 @@ li {
   position: relative;
 }
 
-.home .headerContent .wrapper .mainTitle {
+header.home .headerContent .wrapper .mainTitle {
   position: relative;
+  width: 50%;
+  margin-left: 3%;
+  z-index: 10;
 }
 
-.home .headerContent .wrapper .mainTitle .circleTextContainer {
+header.home .headerContent .wrapper .mainTitle .circleTextContainer {
   position: absolute;
-  width: 35%;
+  width: 150px;
   top: -20px;
   left: -50px;
 }
 
-.home .headerContent .wrapper .mainTitle h1 {
+header.home .headerContent .wrapper .mainTitle h1 {
   font-size: 12rem;
 }
 
-.home .headerContent .wrapper .headerImageContainer {
+header.home .headerContent .wrapper .headerImageContainer {
   position: relative;
-  width: 40%;
-  right: 5%;
-  top: 30px;
-  -webkit-box-shadow: 20px 20px white;
-          box-shadow: 20px 20px white;
+  width: 38%;
+  right: 3%;
+  top: 45px;
+  -webkit-box-shadow: 18px 18px white;
+          box-shadow: 18px 18px white;
 }

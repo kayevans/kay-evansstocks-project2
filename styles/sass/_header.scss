@@ -21,35 +21,44 @@
 }
 
 // home header 
-.home{
+header.home{
     // height: 90vh;
     background-color: #F6A823;
 
+    // flex the items and position it relative for the photo
     .headerContent .wrapper{
         @include flexRow;
         justify-content: space-between;
         position: relative;
 
+        // position relative for the main title container
         .mainTitle{
             position: relative;
+            width: 50%;
+            margin-left: 3%;
+            z-index: 10;
 
+            // position it to the main title container
             .circleTextContainer{
                 position: absolute;
-                width: 35%;
+                width: 150px;
                 top: -20px;
                 left: -50px;
             }
 
+            // change font size
             h1{
                 font-size: 12rem;
             }
         }
+
+        // positon it relative to the main header container | change the position and add box shadow
         .headerImageContainer{
             position: relative;
-            width: 40%;
-            right: 5%;
-            top: 30px;
-            box-shadow: 20px 20px white;
+            width: 38%;
+            right: 3%;
+            top: 45px;
+            box-shadow: 18px 18px white;
 
         }
     }

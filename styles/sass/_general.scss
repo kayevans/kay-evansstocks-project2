@@ -16,10 +16,14 @@ body{
 
 // heading heirarchy
 h1,
+.title{
+    font-family: $headingFont;
+}
+
+h1,
 h2,
 h3,
 .title{
-    font-family: $headingFont;
     text-transform: uppercase;
 }
 
