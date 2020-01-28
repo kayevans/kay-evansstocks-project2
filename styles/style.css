@@ -324,11 +324,27 @@ li {
   margin: 0 20px;
 }
 
+.generic {
+  height: 60vh;
+  position: relative;
+  background: url(../assets/blog-image-1.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.generic h1 {
+  font-size: 8rem;
+  position: absolute;
+  bottom: -60px;
+}
+
 header.home {
   background-color: #F6A823;
 }
 
-header.home .headerContent .wrapper {
+header.home .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,25 +363,25 @@ header.home .headerContent .wrapper {
   position: relative;
 }
 
-header.home .headerContent .wrapper .mainTitle {
+header.home .wrapper .mainTitle {
   position: relative;
   width: 50%;
   margin-left: 3%;
   z-index: 10;
 }
 
-header.home .headerContent .wrapper .mainTitle .circleTextContainer {
+header.home .wrapper .mainTitle .circleTextContainer {
   position: absolute;
   width: 150px;
   top: -20px;
   left: -50px;
 }
 
-header.home .headerContent .wrapper .mainTitle h1 {
+header.home .wrapper .mainTitle h1 {
   font-size: 12rem;
 }
 
-header.home .headerContent .wrapper .headerImageContainer {
+header.home .wrapper .headerImageContainer {
   position: relative;
   width: 38%;
   right: 3%;

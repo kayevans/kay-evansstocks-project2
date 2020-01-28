@@ -21,14 +21,30 @@
 }
 
 // overall headers
+.generic{
+    height: 60vh;
+    position: relative;
+    background: url(../assets/blog-image-1.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    // style the heading to the bottom
+    h1{
+        font-size: 8rem;
+        position: absolute;
+        bottom: -60px;
+    }
+
+}
+
 
 // home header 
 header.home{
-    // height: 90vh;
     background-color: #F6A823;
 
-    // flex the items and position it relative for the photo
-    .headerContent .wrapper{
+    .wrapper{
         @include flexRow;
         justify-content: space-between;
         position: relative;
@@ -65,3 +81,9 @@ header.home{
         }
     }
 }
+
+
+    // flex the items and position it relative for the photo
+    
+
+
