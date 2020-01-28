@@ -1,2 +1,56 @@
 // nav styles
+.topNav{
+    background-color: $primary;
+    height: 10vh;
+    text-transform: uppercase;
+    ul{
+        @include flexRow;
+        justify-content: center;
+        a{
+            display: block;
+            padding: 2px 15px;
+        }
+    }      
+}
 
+// special styles for the title
+.title a{
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin: 0 20px;
+}
+
+// home header 
+.home{
+    // height: 90vh;
+    background-color: #F6A823;
+
+    .headerContent .wrapper{
+        @include flexRow;
+        justify-content: space-between;
+        position: relative;
+
+        .mainTitle{
+            position: relative;
+
+            .circleTextContainer{
+                position: absolute;
+                width: 35%;
+                top: -20px;
+                left: -50px;
+            }
+
+            h1{
+                font-size: 12rem;
+            }
+        }
+        .headerImageContainer{
+            position: relative;
+            width: 40%;
+            right: 5%;
+            top: 30px;
+            box-shadow: 20px 20px white;
+
+        }
+    }
+}

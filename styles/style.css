@@ -280,3 +280,89 @@ a {
 li {
   list-style: none;
 }
+
+.buttonStyles {
+  text-transform: uppercase;
+}
+
+.topNav {
+  background-color: #F6A823;
+  height: 10vh;
+  text-transform: uppercase;
+}
+
+.topNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.topNav ul a {
+  display: block;
+  padding: 2px 15px;
+}
+
+.title a {
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin: 0 20px;
+}
+
+.home {
+  background-color: #F6A823;
+}
+
+.home .headerContent .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.home .headerContent .wrapper .mainTitle {
+  position: relative;
+}
+
+.home .headerContent .wrapper .mainTitle .circleTextContainer {
+  position: absolute;
+  width: 35%;
+  top: -20px;
+  left: -50px;
+}
+
+.home .headerContent .wrapper .mainTitle h1 {
+  font-size: 12rem;
+}
+
+.home .headerContent .wrapper .headerImageContainer {
+  position: relative;
+  width: 40%;
+  right: 5%;
+  top: 30px;
+  -webkit-box-shadow: 20px 20px white;
+          box-shadow: 20px 20px white;
+}

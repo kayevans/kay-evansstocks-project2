@@ -11,3 +11,12 @@ $background: #F0EFED;
 // fonts
 $baseFont: 'Roboto', sans-serif;
 $headingFont: 'Lora', serif;
+
+// mixins
+
+@mixin flexRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}

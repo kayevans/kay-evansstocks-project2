@@ -23,6 +23,7 @@ h3,
     text-transform: uppercase;
 }
 
+
 // remove default link styles
 a{
     text-decoration: none;
@@ -32,4 +33,9 @@ a{
 // remove default list styles
 li{
     list-style: none;
+}
+
+// button styles
+.buttonStyles{
+    text-transform: uppercase;
 }
