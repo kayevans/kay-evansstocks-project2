@@ -1,7 +1,19 @@
 
 // basic styles for the page
+
+.blogPage h2{
+    font-size: 2.8rem;
+}
+
 .blogPage h3{
     font-size: 2rem;
+}
+
+.blogPage .author,
+.blogPage h4{
+    font-weight: bold;
+    color: $secondaryFont;
+    font-style: italic;
 }
 
 
@@ -15,31 +27,117 @@
     .wrapper{
         @include flex;
         justify-content: space-between;
+    }
+}
 
-        // change the width
-        .sideInfo{
-            width: 35%;
+// side info section
+.blogPage .sideInfo{
+    width: 32%;
 
-            // the about section styles
-            .about{
-                @include sectionStyles;
+    // the about section styles
+    .about{
+        @include sectionStyles;
+        margin-bottom: 20px;
 
-                // add spacing
-                h3{
-                    padding: 20px 0 10px;
-                }
+        // add spacing
+        h3{
+            padding: 20px 0 10px;
+        }
 
-                // style the a inside
-                a{
-                    color: $secondaryFont;
-                    font-weight: bold;
+        // style the a inside
+        a{
+            color: $secondaryFont;
+            font-weight: bold;
+            @include transition;
+
+            &:hover{
+                color: $secondary;
+            }
+        }
+    }
+
+    // the recent post section styles
+    .recentPosts{
+        @include sectionStyles;
+
+        h3{
+            padding: 0 0 10px;
+        }
+
+        // move the ul over
+        ul{
+            margin-left: 10px;
+
+            // add the coloured circle
+            li::before{
+                content: '•';
+                color: $primary;
+                margin-right: 15px;
+            }
+
+            // add transitin and hover
+            a{
+                @include transition;
+
+                &:hover{
+                    color: $secondary;
                 }
             }
         }
-
-        // change the width
-        .mainContent{
-            width: 60%;
-        }
     }
 }
+
+
+// change the width
+.blogPage .mainContent{
+    width: 65%;
+
+    // genneral main post styles
+    .mainPost{
+        @include sectionStyles;
+        @include blogBorder;
+        margin-bottom: 30px;
+
+        // add spacing
+        h2{
+            padding-bottom: 10px;
+        }
+
+        // add specific styles to the h4
+        h4{
+            font-weight: lighter;
+            font-style: italic;
+            color: inherit;
+            padding-bottom: 10px;
+        }
+
+        // space all the paragraphs
+        p{
+            padding-bottom: 15px;
+        }
+
+
+    }
+}
+
+// comments section
+.blogPage .comments{
+
+    // comment sections
+    .commentOne{
+        // import the comment section styles
+        @include commentSections;
+        margin-bottom: 20px;
+    }
+
+    // comment two section
+    .commentTwo{
+        // import the comment section styles
+        @include commentSections;
+        // import the border styles
+        @include blogBorder;
+    }
+
+
+}
+

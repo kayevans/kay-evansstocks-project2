@@ -43,3 +43,28 @@ $headerSpacing: 0.1rem;
     padding: 40px 30px 30px;
 }
 
+// orange border for the sections in the blog
+@mixin blogBorder {
+    border-bottom: 5px solid $primary;
+}
+
+// mixin for the comments
+@mixin commentSections {
+    @include flex;
+    @include sectionStyles;
+    justify-content: space-between;
+
+        .photoContainer{
+            width: 12%;
+        }
+
+        .writtenContent{
+            width: 85%;
+
+            h4{
+                padding-bottom: 5px;
+            }
+        }
+    
+}
+
