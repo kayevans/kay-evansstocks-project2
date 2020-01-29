@@ -309,6 +309,7 @@ li {
 .buttonStyles:hover {
   background-color: #285E64;
   color: #F0EFED;
+  cursor: pointer;
 }
 
 .topNav {
@@ -362,9 +363,9 @@ li {
 }
 
 .generic h1 {
-  font-size: 8rem;
+  font-size: 6.5rem;
   position: absolute;
-  bottom: -60px;
+  bottom: -50px;
 }
 
 .contactPage .generic {
@@ -423,6 +424,79 @@ footer {
   text-align: center;
   color: #F0EFED;
   padding: 5px 0;
+}
+
+form input[type="email"]::-webkit-input-placeholder,
+form input[type="text"]::-webkit-input-placeholder,
+form textarea::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: black;
+  opacity: 1;
+}
+
+form input[type="email"]:-ms-input-placeholder,
+form input[type="text"]:-ms-input-placeholder,
+form textarea:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: black;
+  opacity: 1;
+}
+
+form input[type="email"]::-ms-input-placeholder,
+form input[type="text"]::-ms-input-placeholder,
+form textarea::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: black;
+  opacity: 1;
+}
+
+form input[type="email"]::placeholder,
+form input[type="text"]::placeholder,
+form textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: black;
+  opacity: 1;
+}
+
+form input[type="email"],
+form input[type="text"] {
+  width: calc(100%/2 - 5px);
+  float: left;
+  padding: 20px 30px;
+  margin: 0 0 15px;
+  border: 1px solid white;
+}
+
+form input[type="email"]:focus,
+form input[type="text"]:focus {
+  border-color: #F6A823;
+}
+
+form input[type="text"] {
+  margin-right: 10px;
+}
+
+form textarea {
+  clear: both;
+  display: block;
+  resize: none;
+  width: 100%;
+  border: 1px solid white;
+  padding: 30px 30px 0;
+  margin-bottom: 15px;
+}
+
+form textarea:focus {
+  border-color: #F6A823;
+}
+
+form button {
+  width: 100%;
+  border: none;
 }
 
 .whoIsSophie {
@@ -700,6 +774,10 @@ footer {
   padding-bottom: 15px;
 }
 
+.blogPage .comments {
+  margin-bottom: 30px;
+}
+
 .blogPage .comments .commentOne {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -750,4 +828,76 @@ footer {
 
 .blogPage .comments .commentTwo .writtenContent h4 {
   padding-bottom: 5px;
+}
+
+.contactPage address .email:hover,
+.contactPage address a:nth-of-type(2):hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #A82706;
+}
+
+.contactPage main {
+  background-color: #F0EFED;
+  padding: 80px 0;
+}
+
+.contactPage main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactPage .sideInfo {
+  width: 32%;
+}
+
+.contactPage .contactInfo {
+  background-color: white;
+  padding: 40px 30px 30px;
+}
+
+.contactPage .contactInfo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #F6A823;
+  font-size: 2.4rem;
+}
+
+.contactPage .contactInfo ul a {
+  padding-right: 30px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.contactPage .contactInfo ul a:hover {
+  color: #A82706;
+}
+
+.contactPage .contactInfo address {
+  padding-top: 10px;
+  font-style: normal;
+}
+
+.contactPage .contactInfo address a.email {
+  font-weight: bold;
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.contactPage .contactInfo address a:nth-of-type(2) {
+  display: block;
+}
+
+.contactPage .mainContent {
+  width: 65%;
 }

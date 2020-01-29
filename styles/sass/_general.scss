@@ -59,5 +59,6 @@ li{
     &:hover{
         background-color: $secondaryFont;
         color: $background; 
+        cursor: pointer;
     }
 }

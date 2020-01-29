@@ -1,0 +1,72 @@
+// contact page styles
+
+.contactPage address .email:hover,
+.contactPage address a:nth-of-type(2):hover{
+        @include transition;
+        color: $secondary;
+}
+
+// main section styles
+.contactPage main{
+    background-color: $background;
+    padding: 80px 0;
+
+    // flex the items
+    .wrapper{
+        @include flex;
+        justify-content: space-between;
+    }
+}
+
+// width of the side info
+.contactPage .sideInfo{
+    width: 32%;
+}
+
+// include the section padding styles
+.contactPage .contactInfo{
+    @include sectionStyles;
+
+    // flex the icons
+    ul{
+        @include flex;
+        color: $primary;
+        font-size: 2.4rem;
+
+        // add right padding to space
+        a{
+            padding-right: 30px;
+            @include transition;
+
+            // add hover styles
+            &:hover{
+                color: $secondary;
+            }
+        }
+    }
+
+    address{
+        padding-top: 10px;
+        font-style: normal;
+
+        // email styles
+        a.email{
+            font-weight: bold;
+            font-size: 2rem;
+            // so it can take padding
+            display: block;
+            padding-bottom: 10px;
+        }
+
+        // phone styles
+        a:nth-of-type(2){
+            // put on seperate line
+            display: block;
+        }
+    }
+}
+
+// width of the main content
+.contactPage .mainContent{
+    width: 65%;
+}
