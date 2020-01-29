@@ -278,6 +278,7 @@ h3,
 
 h2 {
   font-size: 3.4rem;
+  letter-spacing: 0.1rem;
 }
 
 h3 {
@@ -300,13 +301,13 @@ li {
   letter-spacing: 0.1rem;
   background-color: #30CCDD;
   padding: 10px 20px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .buttonStyles:hover {
   background-color: #285E64;
   color: #F0EFED;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 .topNav {
@@ -335,12 +336,12 @@ li {
 .topNav ul a {
   display: block;
   padding: 2px 15px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .topNav ul a:hover {
   color: #F0EFED;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 .title a {
@@ -586,4 +587,46 @@ footer {
 
 .images ul li:nth-of-type(2) {
   margin: 0 30px;
+}
+
+.blogPage h3 {
+  font-size: 2rem;
+}
+
+.blogPage main {
+  background-color: #F0EFED;
+  padding: 80px 0;
+}
+
+.blogPage main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogPage main .wrapper .sideInfo {
+  width: 35%;
+}
+
+.blogPage main .wrapper .sideInfo .about {
+  background-color: white;
+  padding: 40px 30px 30px;
+}
+
+.blogPage main .wrapper .sideInfo .about h3 {
+  padding: 20px 0 10px;
+}
+
+.blogPage main .wrapper .sideInfo .about a {
+  color: #285E64;
+  font-weight: bold;
+}
+
+.blogPage main .wrapper .mainContent {
+  width: 60%;
 }

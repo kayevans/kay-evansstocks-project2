@@ -12,6 +12,9 @@ $background: #F0EFED;
 $baseFont: 'Roboto', sans-serif;
 $headingFont: 'Lora', serif;
 
+//styles
+$headerSpacing: 0.1rem;
+
 // mixins
 
 // flexbox
@@ -33,3 +36,10 @@ $headingFont: 'Lora', serif;
 @mixin transition {
     transition: all 0.5s ease;
 }
+
+// section padding
+@mixin sectionStyles {
+    background-color: white;
+    padding: 40px 30px 30px;
+}
+

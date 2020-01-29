@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./styles/style.css">
     <title>Blog Post | Sophie | Project 2</title>
 </head>
-<body>
+<body class="blogPage">
         <!-- nav begin -->
         <nav class="topNav">
             <!-- wrapper begins -->
@@ -51,14 +51,14 @@
                         <div class="sophieContainer">
                             <img src="./assets/home-image-1.jpg" alt="Sophie holding two lemons up to their face as eyes">
                         </div>
-                        <h4>About Sophie</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, aperiam. <a href="#">Find out more</a></p>
+                        <h3>About Sophie</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, aperiam. <a href="#">Find out more.</a></p>
                     </section>
                     <!-- about section ends -->
 
                     <!-- recent posts begins -->
                     <section class="recentPosts">
-                        <h4>Recent posts</h4>
+                        <h3>Recent posts</h3>
                         <ul>
                             <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
                             <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
@@ -121,10 +121,10 @@
 
                     <!-- form begins -->
                     <form action="" class="newComment">
-                        <label for="name">Please enter your name</label>
+                        <label class="sr-only" for="name">Please enter your name</label>
                         <input type="text" name="name" id="name" placeholder="Name">
 
-                        <label for="email">Please enter your email</label>
+                        <label class="sr-only" for="email">Please enter your email</label>
                         <input type="email" name="email" id="email" placeholder="Email address">
 
                         <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>

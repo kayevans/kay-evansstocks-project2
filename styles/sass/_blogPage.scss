@@ -1,0 +1,45 @@
+
+// basic styles for the page
+.blogPage h3{
+    font-size: 2rem;
+}
+
+
+// flex the main content beside each other
+.blogPage main{
+    // add styling to the main section
+    background-color: $background;
+    padding: 80px 0;
+
+    // flex the two main sections beside each other
+    .wrapper{
+        @include flex;
+        justify-content: space-between;
+
+        // change the width
+        .sideInfo{
+            width: 35%;
+
+            // the about section styles
+            .about{
+                @include sectionStyles;
+
+                // add spacing
+                h3{
+                    padding: 20px 0 10px;
+                }
+
+                // style the a inside
+                a{
+                    color: $secondaryFont;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        // change the width
+        .mainContent{
+            width: 60%;
+        }
+    }
+}

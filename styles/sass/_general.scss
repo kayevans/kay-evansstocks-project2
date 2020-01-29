@@ -30,12 +30,13 @@ h3,
 // h2 styles
 h2{
     font-size: 3.4rem;
+    letter-spacing: $headerSpacing;
 }
 
 // h3 styles
 h3{
     font-size: 2.4rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: $headerSpacing;
 }
 
 
@@ -53,10 +54,10 @@ li{
 // button styles
 .buttonStyles{
     @include button;
+    @include transition;
 
     &:hover{
         background-color: $secondaryFont;
-        color: $background;
-        @include transition;
+        color: $background; 
     }
 }

@@ -10,10 +10,11 @@
         a{
             display: block;
             padding: 2px 15px;
+            @include transition;
 
             &:hover{
                 color: $background;
-                @include transition;
+                
             }
         }
     }      
