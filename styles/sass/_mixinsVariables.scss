@@ -5,7 +5,7 @@ $primaryFont: #2C2C2C;
 $secondaryFont: #285E64;
 $primary: #F6A823;
 $secondary: #A82706;
-$accent: #05AFC1;
+$accent: #30CCDD;
 $background: #F0EFED;
 
 // fonts
@@ -14,9 +14,22 @@ $headingFont: 'Lora', serif;
 
 // mixins
 
-@mixin flexRow{
+// flexbox
+@mixin flex{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+}
+
+// button styles
+@mixin button {
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    background-color: $accent;
+    padding: 10px 20px;
+}
+
+// transitions
+@mixin transition {
+    transition: all 0.5s ease;
 }

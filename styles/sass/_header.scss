@@ -1,14 +1,20 @@
 // nav styles
 .topNav{
     background-color: $primary;
-    height: 10vh;
     text-transform: uppercase;
     ul{
-        @include flexRow;
+        @include flex;
+        flex-direction: row;
         justify-content: center;
+        align-items: center;
         a{
             display: block;
             padding: 2px 15px;
+
+            &:hover{
+                color: $background;
+                @include transition;
+            }
         }
     }      
 }
@@ -27,7 +33,7 @@
     background: url(../assets/blog-image-1.jpg);
     width: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 60% center;
     background-size: cover;
     
     // style the heading to the bottom
@@ -39,14 +45,21 @@
 
 }
 
+// change the photo for the contact page
+.contactPage .generic{
+    background: url(../assets/contact-image-1.jpg);
+    background-position: center;
+}
 
 // home header 
-header.home{
+.home{
     background-color: #F6A823;
 
+    // flex the items and position it relative for the photo
     .wrapper{
-        @include flexRow;
+        @include flex;
         justify-content: space-between;
+        align-items: center;
         position: relative;
 
         // position relative for the main title container
@@ -83,7 +96,7 @@ header.home{
 }
 
 
-    // flex the items and position it relative for the photo
+
     
 
 

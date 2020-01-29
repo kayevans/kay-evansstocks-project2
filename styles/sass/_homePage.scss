@@ -1,0 +1,163 @@
+// about sophie section
+.whoIsSophie{
+    padding: 80px 0 130px;
+    background-color: $background;
+
+    h2{
+        padding-bottom: 10px;
+    }
+
+    p{
+        padding-bottom: 30px;
+    }
+}
+
+// blog posts section
+.blogPosts{
+    // add a bit of space
+    padding: 20px 0;
+
+    // flex the lis 
+    ul{
+        @include flex;
+        align-items: center;
+        justify-content: space-between;
+
+        // add width to the lis
+        li{
+            width: 50%;
+
+            // add padding around the ps
+            p{
+                padding: 10px 0 30px;
+            }
+
+        }
+
+        // position the photo
+        li:first-of-type{
+            position: relative;
+            top: -65px;
+            box-shadow: 15px 20px $secondary, -200px 20px $secondary;
+
+        }
+
+        // add padding left to the first written section
+        li.rightSpaced{
+            padding-left: 10%;
+        }
+
+        // add padding right and style right to the second written section
+        li.leftSpaced{
+            padding-right: 10%;
+            text-align: right;
+        }
+
+        li:last-of-type{
+            position: relative;
+            top: 45px;
+            box-shadow: 15px 20px $primary, 200px 20px $primary;
+        }
+    }
+}
+
+// icon link section
+.iconLinks{
+    background-color: $background;
+    // add spacing
+    padding: 120px 0 40px;
+
+    // flex the items
+    ul{
+        @include flex;
+        justify-content: space-between;
+
+        // change width of the li and add padding
+        li{
+            width: 45%;
+            padding-left: 2%;
+            // make relative for the icon
+            position: relative; 
+
+            // position the icon absolute and style
+            i{
+                position: absolute;
+                top: 0px;
+                font-size: 1.8rem;
+                left: -40px;
+                padding: 12px;
+                background-color: $primary;
+                border-radius: 50%;
+            }
+
+            a:hover{
+                color: $secondary;
+                @include transition;
+            }
+
+            // add spacing
+            p{
+                padding: 10px 0 50px;
+            }
+        }
+    }
+}
+
+// banner section
+.banner{
+    height: 400px;
+    // add background image
+    background-image: url(../assets/home-image-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// journey section
+.journey{
+    // add section styles
+    padding: 80px 0 100px;
+    background-color: $background;
+
+    // flex the divs
+    .wrapper{
+        @include flex;
+        justify-content: space-between;
+        
+        // add width to the container | add box shadow
+        .sophieContainer{
+            width: 25%;
+            height: auto;
+
+            // add box shadow on img
+            img{
+                box-shadow: 15px 18px $primary;
+            }
+        }
+
+        // add width
+        .content{
+            width: 65%;
+
+            // add spacing
+            p{
+                padding: 15px 0 40px;
+            }
+        }
+    }
+}
+
+// images section
+.images{
+    padding: 80px 0;
+    ul{
+        @include flex;
+
+        li{
+            width: calc((100% - 60px)/3);
+        }
+
+        li:nth-of-type(2){
+            margin: 0 30px;
+        }
+    }
+}

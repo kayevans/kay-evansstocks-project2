@@ -276,6 +276,15 @@ h3,
   text-transform: uppercase;
 }
 
+h2 {
+  font-size: 3.4rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  letter-spacing: 0.1rem;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -286,12 +295,22 @@ li {
 }
 
 .buttonStyles {
+  font-weight: bolder;
   text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background-color: #30CCDD;
+  padding: 10px 20px;
+}
+
+.buttonStyles:hover {
+  background-color: #285E64;
+  color: #F0EFED;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .topNav {
   background-color: #F6A823;
-  height: 10vh;
   text-transform: uppercase;
 }
 
@@ -299,23 +318,29 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .topNav ul a {
   display: block;
   padding: 2px 15px;
+}
+
+.topNav ul a:hover {
+  color: #F0EFED;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .title a {
@@ -330,7 +355,7 @@ li {
   background: url(../assets/blog-image-1.jpg);
   width: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 60% center;
   background-size: cover;
 }
 
@@ -340,18 +365,85 @@ li {
   bottom: -60px;
 }
 
-header.home {
+.contactPage .generic {
+  background: url(../assets/contact-image-1.jpg);
+  background-position: center;
+}
+
+.home {
   background-color: #F6A823;
 }
 
-header.home .wrapper {
+.home .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.home .wrapper .mainTitle {
+  position: relative;
+  width: 50%;
+  margin-left: 3%;
+  z-index: 10;
+}
+
+.home .wrapper .mainTitle .circleTextContainer {
+  position: absolute;
+  width: 150px;
+  top: -20px;
+  left: -50px;
+}
+
+.home .wrapper .mainTitle h1 {
+  font-size: 12rem;
+}
+
+.home .wrapper .headerImageContainer {
+  position: relative;
+  width: 38%;
+  right: 3%;
+  top: 45px;
+  -webkit-box-shadow: 18px 18px white;
+          box-shadow: 18px 18px white;
+}
+
+footer {
+  background-color: #2C2C2C;
+  text-align: center;
+  color: #F0EFED;
+  padding: 5px 0;
+}
+
+.whoIsSophie {
+  padding: 80px 0 130px;
+  background-color: #F0EFED;
+}
+
+.whoIsSophie h2 {
+  padding-bottom: 10px;
+}
+
+.whoIsSophie p {
+  padding-bottom: 30px;
+}
+
+.blogPosts {
+  padding: 20px 0;
+}
+
+.blogPosts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
@@ -360,32 +452,138 @@ header.home .wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
 }
 
-header.home .wrapper .mainTitle {
-  position: relative;
+.blogPosts ul li {
   width: 50%;
-  margin-left: 3%;
-  z-index: 10;
 }
 
-header.home .wrapper .mainTitle .circleTextContainer {
-  position: absolute;
-  width: 150px;
-  top: -20px;
-  left: -50px;
+.blogPosts ul li p {
+  padding: 10px 0 30px;
 }
 
-header.home .wrapper .mainTitle h1 {
-  font-size: 12rem;
-}
-
-header.home .wrapper .headerImageContainer {
+.blogPosts ul li:first-of-type {
   position: relative;
-  width: 38%;
-  right: 3%;
+  top: -65px;
+  -webkit-box-shadow: 15px 20px #A82706, -200px 20px #A82706;
+          box-shadow: 15px 20px #A82706, -200px 20px #A82706;
+}
+
+.blogPosts ul li.rightSpaced {
+  padding-left: 10%;
+}
+
+.blogPosts ul li.leftSpaced {
+  padding-right: 10%;
+  text-align: right;
+}
+
+.blogPosts ul li:last-of-type {
+  position: relative;
   top: 45px;
-  -webkit-box-shadow: 18px 18px white;
-          box-shadow: 18px 18px white;
+  -webkit-box-shadow: 15px 20px #F6A823, 200px 20px #F6A823;
+          box-shadow: 15px 20px #F6A823, 200px 20px #F6A823;
+}
+
+.iconLinks {
+  background-color: #F0EFED;
+  padding: 120px 0 40px;
+}
+
+.iconLinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.iconLinks ul li {
+  width: 45%;
+  padding-left: 2%;
+  position: relative;
+}
+
+.iconLinks ul li i {
+  position: absolute;
+  top: 0px;
+  font-size: 1.8rem;
+  left: -40px;
+  padding: 12px;
+  background-color: #F6A823;
+  border-radius: 50%;
+}
+
+.iconLinks ul li a:hover {
+  color: #A82706;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.iconLinks ul li p {
+  padding: 10px 0 50px;
+}
+
+.banner {
+  height: 400px;
+  background-image: url(../assets/home-image-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.journey {
+  padding: 80px 0 100px;
+  background-color: #F0EFED;
+}
+
+.journey .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.journey .wrapper .sophieContainer {
+  width: 25%;
+  height: auto;
+}
+
+.journey .wrapper .sophieContainer img {
+  -webkit-box-shadow: 15px 18px #F6A823;
+          box-shadow: 15px 18px #F6A823;
+}
+
+.journey .wrapper .content {
+  width: 65%;
+}
+
+.journey .wrapper .content p {
+  padding: 15px 0 40px;
+}
+
+.images {
+  padding: 80px 0;
+}
+
+.images ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.images ul li {
+  width: calc((100% - 60px)/3);
+}
+
+.images ul li:nth-of-type(2) {
+  margin: 0 30px;
 }
