@@ -208,7 +208,7 @@
     //                  HEADER STYLES
 
     // nav styles
-    
+
     // show the humburger nav
     .topNav .hamburgerButton{
         display: block;
@@ -324,5 +324,46 @@
         }
     }
 
+    //              BLOG PAGE
+
+    .blogPage .sideInfo{
+        // flex the two sections
+        flex-direction: column;
+        background-color: inherit;
+        
+
+        // about section styles
+        .about{
+            width: 100%;
+            justify-content: space-around;
+
+
+            // change the size of the containers
+            .sophieContainer{
+                width: 30%;
+            }
+
+            .written{
+                width: 55%;
+            }
+        }
+
+        // change the styles and width
+        .recentPosts{
+            width: 100%;
+            padding-left: 50px;
+            margin-top: 20px;
+
+            // add padding to the top
+            h3{
+                padding-top: 0;
+            }
+
+            a{
+                font-size: 1.6rem;
+            }
+
+        }
+    }
 
 }
