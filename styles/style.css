@@ -1247,3 +1247,37 @@ form button {
     width: 100%;
   }
 }
+
+@media (max-width: 400px) {
+  .home .wrapper .mainTitle {
+    bottom: -85px;
+    left: 20px;
+  }
+  .home .wrapper .mainTitle h1 {
+    font-size: 6rem;
+  }
+  .home .wrapper .headerImageContainer {
+    width: 50%;
+    right: -80px;
+    top: 40px;
+  }
+  .blogPosts ul li {
+    width: 100%;
+  }
+  .blogPosts ul li.leftSpaced {
+    padding-left: 0;
+    text-align: center;
+  }
+  .blogPosts ul li:first-of-type {
+    left: 0px;
+    width: 100%;
+  }
+  .blogPosts ul li.rightSpaced {
+    padding-left: 0;
+    text-align: center;
+  }
+  .blogPosts ul li:nth-of-type(4) {
+    left: 0px;
+    width: 100%;
+  }
+}

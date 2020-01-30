@@ -470,3 +470,67 @@
     }
 
 }
+
+
+@media (max-width: 400px){
+
+    //                      BASIC STYLES
+
+
+    //                      HEADER STYLES
+
+    // home header styles
+    .home{
+        // padding-bottom: 100px;
+        .wrapper{
+            .mainTitle{
+                bottom: -85px;
+                left: 20px;
+                // change the size of the h1
+                h1{
+                    font-size: 6rem;
+                }
+            }
+
+            .headerImageContainer{
+                width: 50%;
+                right: -80px;
+                top: 40px;
+            }
+        }
+    }
+
+    .blogPosts{
+        ul{ 
+            li{
+                width: 100%;
+            }
+            // change the padding
+            li.leftSpaced{
+                padding-left: 0;
+                text-align: center;
+                
+            }
+
+            li:first-of-type{
+                left: 0px;
+                width: 100%;   
+            }
+
+            // change the padding
+            li.rightSpaced{
+                padding-left: 0;
+                text-align: center;
+            }
+
+            li:nth-of-type(4){
+                left: 0px;
+                width: 100%;  
+            }
+        }
+    }
+
+
+
+
+}
