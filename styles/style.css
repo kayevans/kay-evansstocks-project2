@@ -988,11 +988,6 @@ form button {
   .journey .wrapper .sophieContainer {
     width: 60%;
     padding-left: 10%;
-    position: relative;
-  }
-  .journey .wrapper .sophieContainer img {
-    -webkit-box-shadow: 15px 18px #F6A823;
-            box-shadow: 15px 18px #F6A823;
   }
   .journey .wrapper .content {
     width: 90%;
@@ -1185,5 +1180,70 @@ form button {
   }
   .blogPage .sideInfo .recentPosts a {
     font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .home .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home .wrapper .mainTitle {
+    position: relative;
+    bottom: -100px;
+    left: 20px;
+    width: 100%;
+  }
+  .home .wrapper .mainTitle h1 {
+    font-size: 7rem;
+  }
+  .home .wrapper .mainTitle .circleTextContainer {
+    width: 110px;
+    left: -40px;
+  }
+  .home .wrapper .headerImageContainer {
+    width: 45%;
+    right: -100px;
+    top: 45px;
+  }
+  .blogPosts ul li.leftSpaced {
+    padding-left: 5%;
+  }
+  .blogPosts ul li:first-of-type {
+    left: -100px;
+  }
+  .blogPosts ul li.rightSpaced {
+    padding-left: 5%;
+  }
+  .blogPosts ul li:nth-of-type(4) {
+    left: -100px;
+  }
+  .journey .wrapper .sophieContainer {
+    padding-left: 0;
+  }
+  .journey .wrapper .content {
+    padding-left: 15%;
+  }
+  .images ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .images ul li:nth-of-type(2) {
+    margin: 0 0 20px;
+  }
+  .images ul li {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  form input[type="email"],
+  form input[type="text"] {
+    width: 100%;
   }
 }

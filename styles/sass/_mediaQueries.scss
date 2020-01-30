@@ -75,12 +75,6 @@
             .sophieContainer{
                 width: 60%;
                 padding-left:10%;
-                position: relative;
-
-
-                img{
-                    box-shadow: 15px 18px $primary;
-                }
             }
 
             .content{
@@ -326,6 +320,7 @@
 
     //              BLOG PAGE
 
+    // side info styles
     .blogPage .sideInfo{
         // flex the two sections
         flex-direction: column;
@@ -359,11 +354,119 @@
                 padding-top: 0;
             }
 
+            // change style
             a{
                 font-size: 1.6rem;
             }
 
         }
+    }
+
+}
+
+@media (max-width: 600px){
+
+    //              HEADER STYLES
+
+    // home header styles
+    .home{
+        // padding-bottom: 100px;
+        .wrapper{
+            flex-direction: column;
+            .mainTitle{
+                position: relative;
+                bottom: -100px;
+                left: 20px;
+                width: 100%;
+                // change the size of the h1
+                h1{
+                    font-size: 7rem;
+                }
+
+                // change the size of the circle text
+                .circleTextContainer{
+                    width: 110px;
+                    left: -40px;
+                }
+            }
+
+            .headerImageContainer{
+                width: 45%;
+                right: -100px;
+                top: 45px;
+            }
+        }
+    }
+
+
+    //              HOME STYLES
+
+    // change the spacing of blog posts
+    .blogPosts{
+        ul{
+            // change the padding
+            li.leftSpaced{
+                padding-left: 5%;
+                
+            }
+
+            li:first-of-type{
+                left: -100px;   
+            }
+
+            // change the padding
+            li.rightSpaced{
+                padding-left: 5%;
+            }
+
+            li:nth-of-type(4){
+                left: -100px;
+                
+            }
+        }
+    }
+
+    // change the spacing
+    .journey{
+        .wrapper{
+            .sophieContainer{
+                padding-left: 0;
+            }
+
+            // change the padding
+            .content{
+                padding-left: 15%;
+            }
+        }
+    }
+
+    // images section  
+    .images{
+        // change to the column
+        ul{
+            flex-direction: column;
+            align-items: center;
+
+            li:nth-of-type(2){
+                margin: 0 0 20px;
+            }
+
+            // change width
+            li{
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            
+        }
+    }
+
+    //             FORM STYLES
+
+    // change the widths
+    form input[type="email"],
+    form input[type="text"]{
+        width: 100%;
     }
 
 }
