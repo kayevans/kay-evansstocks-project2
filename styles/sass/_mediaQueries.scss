@@ -202,3 +202,127 @@
     }
 
 }
+
+@media (max-width: 850px){
+
+    //                  HEADER STYLES
+
+    // nav styles
+    
+    // show the humburger nav
+    .topNav .hamburgerButton{
+        display: block;
+        font-size: 4.5rem;
+        position: fixed;
+        top: 0;
+        right: 10%;
+        z-index: 1;
+    }
+
+    // hide the nav
+    .topNav ul{
+        display: none;
+    }
+
+    // when checked show the nav and nav styles
+    .topNav .hamburgerCheck:checked + ul{
+        display: block;
+        z-index: 20;
+        position: fixed;
+        width: 50%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: $secondary;
+        color: $background;
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 80px;
+
+        // edit the padding
+        a{
+            padding: 30px 15px;
+
+            &:hover{
+                color: $primary;
+            }
+
+            &:focus{
+                color: $primary;
+            }
+        }
+
+        // hide the title in the list
+        a.title{
+            display: none;
+        }
+    }
+
+
+    // show the title
+    .topNav .titleRes{
+        display: inline-block;
+        padding: 10px 0;
+        margin: 0;
+        @include transition;
+
+        &:hover{
+            color: $background;;
+        }
+    }
+
+    // home header styles
+    .home{
+        .wrapper{
+            .mainTitle{
+                // change the size of the h1
+                h1{
+                    font-size: 8rem;
+                }
+            }
+        }
+    }
+
+    //                  HOME PAGE
+
+    // who is sophie section
+    .whoIsSophie{
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    // icon links section
+    .iconLinks{
+        // make into a column and center
+        ul{
+            flex-direction: column;
+            align-items: center;
+
+            // make width bigger and add more padding left
+            li{
+                width: 80%;
+                padding-left: 5%;
+            }
+        }
+    }
+
+    // banner section
+    .banner{
+        height: 250px;
+    }
+
+    // images section  
+    .images{
+        ul{
+            li{
+                width: calc((100% - 20px)/3);
+            }
+
+            li:nth-of-type(2){
+                margin: 0 10px;
+            }
+        }
+    }
+
+
+}
