@@ -95,6 +95,11 @@
                 @include transition;
             }
 
+            a:focus{
+                color: $secondary;
+                @include transition;
+            }
+
             // add spacing
             p{
                 padding: 10px 0 50px;

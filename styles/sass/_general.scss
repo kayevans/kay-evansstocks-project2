@@ -61,4 +61,10 @@ li{
         color: $background; 
         cursor: pointer;
     }
+
+    &:focus{
+        background-color: $secondaryFont;
+        color: $background; 
+        cursor: pointer;
+    }
 }

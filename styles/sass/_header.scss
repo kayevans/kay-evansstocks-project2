@@ -16,15 +16,31 @@
                 color: $background;
                 
             }
+
+            &:focus{
+                color: $background;
+                
+            }
         }
     }      
 }
 
+// hide the navigation on desktop
+.topNav .hamburgerButton,
+.topNav .hamburgerCheck{
+    display: none;
+}
+
 // special styles for the title
-.title a{
+.title{
     font-weight: 700;
     font-size: 3.5rem;
     margin: 0 20px;
+}
+
+// hide second title on desktop
+.titleRes{
+    display: none;
 }
 
 // overall headers
@@ -49,7 +65,9 @@
 // change the photo for the contact page
 .contactPage .generic{
     background: url(../assets/contact-image-1.jpg);
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 // home header 
@@ -95,6 +113,9 @@
         }
     }
 }
+
+
+
 
 
 

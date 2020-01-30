@@ -1,0 +1,120 @@
+// MEDIA QUERIES 
+
+@media (max-width: 1020px){
+
+    //                          HOME STYLES             
+    
+    // home header styles
+    .home{
+        .wrapper{
+            .mainTitle{
+                // change the size of the h1
+                h1{
+                    font-size: 10rem;
+                }
+            }
+
+            // change size of image
+            .headerImageContainer{
+                width: 40%;
+            }
+        }
+    }
+
+    // blog posts
+    .blogPosts{
+        // add spacing
+        padding-bottom: 60px;
+
+        // make column
+        ul{
+            flex-direction: column;
+
+            // change width of the lis
+            li{
+                width: 80%;
+            }
+
+            // change the size of the picture and position
+            li:first-of-type{
+                width: 65%;
+                left: -120px;
+                box-shadow: 15px 20px $secondary;
+            }
+
+            // change order, change the padding
+            li.leftSpaced{
+                order: 1;
+                text-align: left;
+                padding: 20px 0 20px 15%;
+            }
+
+            // change the padding
+            li.rightSpaced{
+                padding: 20px 0 20px 15%;
+            }
+
+            // add spacing below the image and change position
+            li:nth-of-type(4){
+                margin-bottom: 100px;
+                width: 65%;
+                left: -120px;
+                box-shadow: 15px 20px $primary;
+                
+            }
+        }
+    }
+
+    // journey section
+    .journey{
+        .wrapper{
+            flex-direction: column;
+
+            .sophieContainer{
+                width: 60%;
+                padding-left:10%;
+
+                img{
+                    box-shadow: 15px 18px $primary;
+                }
+            }
+
+            .content{
+                width: 90%;
+                padding: 50px 0 0 30%;
+            }
+        }
+    }
+
+
+    //                          BLOG STYLES
+
+    // change the header styles
+    .generic{
+        height: 40vh;
+    }
+
+    .blogPage main{
+        .wrapper{
+            flex-direction: column-reverse;
+        }
+    }
+
+    .blogPage .sideInfo{
+        width: 100%;
+
+        .about{
+            background-color: $primary;
+            margin-bottom: 0;
+        }
+
+        .recentPosts{
+            background-color: $primary;
+        }
+    }
+
+    .blogPage .mainContent{
+        width: 100%;
+    }
+
+}
