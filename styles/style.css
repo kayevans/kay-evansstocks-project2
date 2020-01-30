@@ -988,6 +988,7 @@ form button {
   .journey .wrapper .sophieContainer {
     width: 60%;
     padding-left: 10%;
+    position: relative;
   }
   .journey .wrapper .sophieContainer img {
     -webkit-box-shadow: 15px 18px #F6A823;
@@ -1007,16 +1008,74 @@ form button {
             flex-direction: column-reverse;
   }
   .blogPage .sideInfo {
+    margin-top: 20px;
     width: 100%;
+    background-color: #F6A823;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .blogPage .sideInfo .about {
     background-color: #F6A823;
     margin-bottom: 0;
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .blogPage .sideInfo .about .sophieContainer {
+    width: 35%;
+  }
+  .blogPage .sideInfo .about .written {
+    width: 58%;
+  }
+  .blogPage .sideInfo .about .written h3 {
+    padding-top: 10%;
   }
   .blogPage .sideInfo .recentPosts {
     background-color: #F6A823;
+    width: 40%;
+    font-size: 1.4rem;
+  }
+  .blogPage .sideInfo .recentPosts h3 {
+    padding-top: 10%;
+  }
+  .blogPage .sideInfo .recentPosts ul li::before {
+    color: #2C2C2C;
   }
   .blogPage .mainContent {
     width: 100%;
+  }
+  .contactPage main .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contactPage .sideInfo {
+    width: 100%;
+    text-align: center;
+  }
+  .contactPage .contactInfo ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactPage .contactInfo ul a {
+    padding: 0 20px;
+  }
+  .contactPage .mainContent {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }

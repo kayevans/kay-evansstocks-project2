@@ -40,6 +40,7 @@
                 width: 65%;
                 left: -120px;
                 box-shadow: 15px 20px $secondary;
+                
             }
 
             // change order, change the padding
@@ -47,6 +48,7 @@
                 order: 1;
                 text-align: left;
                 padding: 20px 0 20px 15%;
+                
             }
 
             // change the padding
@@ -73,6 +75,8 @@
             .sophieContainer{
                 width: 60%;
                 padding-left:10%;
+                position: relative;
+
 
                 img{
                     box-shadow: 15px 18px $primary;
@@ -94,27 +98,107 @@
         height: 40vh;
     }
 
+    // make into a column
     .blogPage main{
         .wrapper{
             flex-direction: column-reverse;
         }
     }
 
+    // side info styles
     .blogPage .sideInfo{
+        margin-top: 20px;
         width: 100%;
+        background-color: $primary;
 
+        // flex the two sections
+        @include flex;
+        justify-content: space-between;
+        
+
+        // about section styles
         .about{
             background-color: $primary;
             margin-bottom: 0;
+            width: 60%;
+            // flex image and written content beside each other
+            @include flex;
+            justify-content: space-between;
+
+            // change the size of the containers
+            .sophieContainer{
+                width: 35%;
+            }
+
+            .written{
+                width: 58%;
+
+
+                // add padding to the top
+                h3{
+                    padding-top: 10%;
+                }
+            }
         }
 
+        // change the styles and width
         .recentPosts{
             background-color: $primary;
+            width: 40%;
+            font-size: 1.4rem;
+
+            // add padding to the top
+            h3{
+                padding-top: 10%;
+            }
+
+            // change color of the before element
+            ul{
+                li::before{
+                    color: $primaryFont;
+                }
+            }
+
         }
     }
 
+    // change width of the main
     .blogPage .mainContent{
         width: 100%;
+    }
+
+    //                  CONTACT STYLES
+
+    // make it into a column
+    .contactPage main{
+        .wrapper{
+            flex-direction: column-reverse;
+        }
+    }
+
+    // change the width
+    .contactPage .sideInfo{
+        width: 100%;
+        text-align: center;
+    }
+
+    // conact info section
+    .contactPage .contactInfo{
+        // align icons center
+        ul{
+            justify-content: center;
+
+            // add more padding around icons
+            a{
+                padding: 0 20px;
+            }
+        }
+    }
+
+    // spacing for the main content
+    .contactPage .mainContent{
+        width: 100%;
+        margin-bottom: 20px;
     }
 
 }
