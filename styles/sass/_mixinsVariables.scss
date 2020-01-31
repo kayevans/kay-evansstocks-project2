@@ -49,17 +49,17 @@ $headerSpacing: 0.1rem;
 }
 
 // mixin for the comments
-@mixin commentSections {
+@mixin commentSections($photoWidth, $writtenWidth){
     @include flex;
     @include sectionStyles;
     justify-content: space-between;
 
         .photoContainer{
-            width: 12%;
+            width: $photoWidth;
         }
 
         .writtenContent{
-            width: 85%;
+            width: $writtenWidth;
 
             h4{
                 padding-bottom: 5px;

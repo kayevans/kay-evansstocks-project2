@@ -472,9 +472,30 @@
 }
 
 
-@media (max-width: 400px){
+@media (max-width: 420px){
 
     //                      BASIC STYLES
+
+    // change font sizes
+    h2{
+        font-size: 3rem;
+    }
+
+    h3{
+        font-size: 2.2rem;
+    }
+
+    // change height of the header
+    .generic{
+        height: 30vh;
+    }
+
+    // change styling of h1s
+    .generic h1{
+        font-size: 4.5rem;
+        bottom: -35px;
+    }
+
 
 
     //                      HEADER STYLES
@@ -500,8 +521,24 @@
         }
     }
 
+    // change the wrapper of top nav
+    .topNav .wrapper{
+        width: 90%;
+    }
+
+    // when checked show the nav and nav styles
+    .topNav .hamburgerCheck:checked + ul{
+        width: 60%;
+
+    }
+
+
+    //                      HOME PAGE
+
+    // blog post styles
     .blogPosts{
         ul{ 
+            // make all lis take up 100%
             li{
                 width: 100%;
             }
@@ -529,6 +566,209 @@
             }
         }
     }
+
+    // icon links section
+    .iconLinks{
+        ul{
+            // make width bigger and add more padding left
+            li{
+                width: 90%;
+                padding-left: 10%;
+
+                i{
+                left: -30px;
+                }
+            }
+        }
+    }
+
+     // change the spacing
+    .journey{
+        .wrapper{
+            .sophieContainer{
+                width: 100%;
+            }
+
+            // change the padding
+            .content{
+                padding-left: 0;
+                text-align: center;
+            }
+        }
+    }
+
+    //              BLOG PAGE
+    .blogPage h2{
+        font-size: 2.4rem;
+    }
+
+    // side info styles
+    .blogPage .sideInfo{
+        
+        // about section styles
+        .about{
+            // make a column
+            flex-direction: column;
+
+
+            // change the size of the containers
+            .sophieContainer{
+                width: 100%;
+            }
+
+            .written{
+                width: 100%;
+            }
+        }
+    }
+
+    // comments section
+    .blogPage .comments{
+
+        // comment sections
+        .commentOne{
+            // change the styles of the section and make them take full width
+            @include commentSections(100%, 100%);
+            flex-direction: column;
+            align-items: center;
+
+            .photoContainer{
+                margin-bottom: 20px;
+
+                img{
+                    margin: 0 auto;
+                }
+            }  
+        }
+
+        // comment two section
+        .commentTwo{
+            // change the styles of the section and make them take full width
+            @include commentSections(100%, 100%);
+            flex-direction: column;
+            align-items: center;
+
+            
+            .photoContainer{
+                margin-bottom: 20px;
+
+                img{
+                    margin: 0 auto;
+                }
+            } 
+        }
+
+
+    }
+
+    // change wrapper on contact and blog
+    .blogPage .wrapper,
+    .contactPage .wrapper{
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 320px){
+
+    //                  BASIC STYLES
+    .generic h1{
+        font-size: 4rem;
+        bottom: -30px;
+    }
+
+    //                  HEADER STYLES
+
+    // home header styles
+    .home{
+        .wrapper{
+            .mainTitle{
+                bottom: -80px;
+                // change the size of the h1
+                h1{
+                    font-size: 5.5rem;
+                }
+            }
+
+            .headerImageContainer{
+                width: 60%;
+                right: -45px;
+            }
+        }
+    }
+
+    //                  HOME STYLES
+    // icon links section
+    .iconLinks{
+        ul{
+            // make width bigger and add more padding left
+            li{
+                width: 100%;
+                padding-left: 20%;
+
+                i{
+                left: -10px;
+                top: -5px;
+                }
+            }
+        }
+    }
+
+    // banner section
+    .banner{
+        height: 200px;
+    }
+
+    // images section  
+    .images{
+        // change to the column
+        ul{
+
+            // change width
+            li{
+                width: 100%;
+            }
+
+            
+        }
+    }
+
+    //                  BLOG STYLES
+
+
+     // side info styles
+    .blogPage .sideInfo{
+
+
+        // change the styles and width
+        .recentPosts{
+            padding-left: 30px;
+
+            // change style
+            a{
+                font-size: 1.4rem;
+            }
+
+        }
+    }
+
+
+    //              CONTACT STYLES
+
+    .contactPage .contactInfo{
+        // make icons column
+        ul{
+            flex-direction: column;
+
+            // add more padding around icons
+            a{
+                display: inline-block;
+                padding: 10px 20px;
+            }
+        }
+    }
+
+
 
 
 

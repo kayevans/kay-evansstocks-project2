@@ -135,14 +135,15 @@
     // comment sections
     .commentOne{
         // import the comment section styles
-        @include commentSections;
+        @include commentSections(12%, 85%);
         margin-bottom: 20px;
+
     }
 
     // comment two section
     .commentTwo{
         // import the comment section styles
-        @include commentSections;
+        @include commentSections(12%, 85%);
         // import the border styles
         @include blogBorder;
     }
