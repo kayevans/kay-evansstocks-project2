@@ -65,11 +65,12 @@
 .iconLinks{
     background-color: $background;
     // add spacing
-    padding: 120px 0 40px;
+    padding: 120px 0 40px;  
+}
 
-    // flex the items
-    ul{
-        @include flex;
+// flex the items
+.iconLinks ul{
+    @include flex;
         justify-content: space-between;
 
         // change width of the li and add padding
@@ -105,7 +106,6 @@
                 padding: 10px 0 50px;
             }
         }
-    }
 }
 
 // banner section
@@ -126,29 +126,29 @@
     // flex the divs
     .wrapper{
         @include flex;
-        justify-content: space-between;
-        
-        // add width to the container | add box shadow
-        .sophieContainer{
-            width: 25%;
-            height: auto;
+        justify-content: space-between; 
+    }
+}
+
+ // add width to the container | add box shadow
+.journey .sophieContainer{
+    width: 25%;
+    height: auto;
 
             // add box shadow on img
             img{
                 box-shadow: 15px 18px $primary;
             }
-        }
+}
 
-        // add width
-        .content{
-            width: 65%;
+// add width
+.journey .content{
+    width: 65%;
 
-            // add spacing
-            p{
-                padding: 15px 0 40px;
-            }
+        // add spacing
+        p{
+            padding: 15px 0 40px;
         }
-    }
 }
 
 // images section

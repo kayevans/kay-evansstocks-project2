@@ -5,20 +5,16 @@
     //                          HOME STYLES             
     
     // home header styles
-    .home{
-        .wrapper{
-            .mainTitle{
-                // change the size of the h1
-                h1{
-                    font-size: 10rem;
-                }
-            }
-
-            // change size of image
-            .headerImageContainer{
-                width: 40%;
-            }
+    .home .mainTitle{
+        // change the size of the h1
+        h1{
+            font-size: 10rem;
         }
+    }
+
+    // change size of image
+    .home .headerImageContainer{
+        width: 40%;
     }
 
     // blog posts
@@ -71,18 +67,21 @@
     .journey{
         .wrapper{
             flex-direction: column;
-
-            .sophieContainer{
-                width: 60%;
-                padding-left:10%;
-            }
-
-            .content{
-                width: 90%;
-                padding: 50px 0 0 30%;
-            }
         }
     }
+
+    // change width and add left padding
+    .journey .sophieContainer{
+        width: 60%;
+        padding-left:10%;
+    }
+
+    // change width and add padding
+    .journey .content{
+        width: 90%;
+        padding: 50px 0 0 30%;
+    }
+
 
 
     //                          BLOG STYLES
@@ -108,11 +107,11 @@
         // flex the two sections
         @include flex;
         justify-content: space-between;
-        
+    }
 
-        // about section styles
-        .about{
-            background-color: $primary;
+    // about section styles
+    .blogPage .about{
+        background-color: $primary;
             margin-bottom: 0;
             width: 60%;
             // flex image and written content beside each other
@@ -124,20 +123,20 @@
                 width: 35%;
             }
 
+            // change width and padding
             .written{
                 width: 58%;
-
 
                 // add padding to the top
                 h3{
                     padding-top: 10%;
                 }
             }
-        }
+    }
 
-        // change the styles and width
-        .recentPosts{
-            background-color: $primary;
+    // change the styles and width
+    .blogPage .recentPosts{
+        background-color: $primary;
             width: 40%;
             font-size: 1.4rem;
 
@@ -152,8 +151,6 @@
                     color: $primaryFont;
                 }
             }
-
-        }
     }
 
     // change width of the main
@@ -176,8 +173,8 @@
         text-align: center;
     }
 
-    // conact info section
-    .contactPage .contactInfo{
+    // contact info section
+    .contactInfo{
         // align icons center
         ul{
             justify-content: center;
@@ -266,14 +263,10 @@
     }
 
     // home header styles
-    .home{
-        .wrapper{
-            .mainTitle{
-                // change the size of the h1
-                h1{
-                    font-size: 8rem;
-                }
-            }
+    .home .mainTitle{
+        // change the size of the h1
+        h1{
+            font-size: 8rem;
         }
     }
 
@@ -285,11 +278,9 @@
         padding-top: 100px;
     }
 
-    // icon links section
-    .iconLinks{
-        // make into a column and center
-        ul{
-            flex-direction: column;
+    // make into a column and center
+    .iconLinks ul{
+        flex-direction: column;
             align-items: center;
 
             // make width bigger and add more padding left
@@ -297,7 +288,6 @@
                 width: 80%;
                 padding-left: 5%;
             }
-        }
     }
 
     // banner section
@@ -325,13 +315,12 @@
         // flex the two sections
         flex-direction: column;
         background-color: inherit;
-        
+    }
 
-        // about section styles
-        .about{
-            width: 100%;
+    // about section styles
+    .blogPage .about{
+        width: 100%;
             justify-content: space-around;
-
 
             // change the size of the containers
             .sophieContainer{
@@ -341,11 +330,11 @@
             .written{
                 width: 55%;
             }
-        }
+    }
 
-        // change the styles and width
-        .recentPosts{
-            width: 100%;
+    // change position and width
+    .blogPage .recentPosts{
+        width: 100%;
             padding-left: 50px;
             margin-top: 20px;
 
@@ -358,8 +347,6 @@
             a{
                 font-size: 1.6rem;
             }
-
-        }
     }
 
 }
@@ -372,30 +359,33 @@
     .home{
         // padding-bottom: 100px;
         .wrapper{
-            flex-direction: column;
-            .mainTitle{
-                position: relative;
-                bottom: -100px;
-                left: 20px;
-                width: 100%;
-                // change the size of the h1
-                h1{
-                    font-size: 7rem;
-                }
-
-                // change the size of the circle text
-                .circleTextContainer{
-                    width: 110px;
-                    left: -40px;
-                }
-            }
-
-            .headerImageContainer{
-                width: 45%;
-                right: -100px;
-                top: 45px;
-            }
+            flex-direction: column;  
         }
+    }
+
+    // change position of main title
+    .home .mainTitle{
+        position: relative;
+        bottom: -100px;
+        left: 20px;
+        width: 100%;
+        // change the size of the h1
+        h1{
+            font-size: 7rem;
+        }
+
+        // change the size of the circle text
+        .circleTextContainer{
+            width: 110px;
+            left: -40px;
+        }
+    }
+
+    // change size and position
+    .home .headerImageContainer{
+        width: 45%;
+        right: -100px;
+        top: 45px;
     }
 
 
@@ -426,18 +416,14 @@
         }
     }
 
-    // change the spacing
-    .journey{
-        .wrapper{
-            .sophieContainer{
-                padding-left: 0;
-            }
+    // remove spacing on left
+    .journey .sophieContainer{
+        padding-left: 0;
+    }
 
-            // change the padding
-            .content{
-                padding-left: 15%;
-            }
-        }
+    // change the padding
+    .journey .content{
+        padding-left: 15%;
     }
 
     // images section  
@@ -471,7 +457,6 @@
 
 }
 
-
 @media (max-width: 420px){
 
     //                      BASIC STYLES
@@ -501,24 +486,22 @@
     //                      HEADER STYLES
 
     // home header styles
-    .home{
-        // padding-bottom: 100px;
-        .wrapper{
-            .mainTitle{
-                bottom: -85px;
-                left: 20px;
-                // change the size of the h1
-                h1{
-                    font-size: 6rem;
-                }
-            }
 
-            .headerImageContainer{
-                width: 50%;
-                right: -80px;
-                top: 40px;
-            }
+    // change position
+    .home .mainTitle{
+        bottom: -85px;
+        left: 20px;
+        // change the size of the h1
+        h1{
+            font-size: 6rem;
         }
+    }
+
+    // change the position
+    .home .headerImageContainer{
+        width: 50%;
+        right: -80px;
+        top: 40px;
     }
 
     // change the wrapper of top nav
@@ -567,34 +550,28 @@
         }
     }
 
-    // icon links section
-    .iconLinks{
-        ul{
-            // make width bigger and add more padding left
-            li{
+     // make width bigger and add more padding left
+    .iconLinks ul{
+        li{
                 width: 90%;
                 padding-left: 10%;
 
                 i{
                 left: -30px;
+                top: -5px;
                 }
             }
-        }
     }
 
-     // change the spacing
-    .journey{
-        .wrapper{
-            .sophieContainer{
-                width: 100%;
-            }
+    // make take up full width
+    .journey .sophieContainer{
+        width: 100%;
+    }
 
-            // change the padding
-            .content{
-                padding-left: 0;
-                text-align: center;
-            }
-        }
+    // change pading and make center
+    .journey .content{
+        padding-left: 0;
+        text-align: center;
     }
 
     //              BLOG PAGE
@@ -603,11 +580,8 @@
     }
 
     // side info styles
-    .blogPage .sideInfo{
-        
-        // about section styles
-        .about{
-            // make a column
+    .blogPage .about{
+        // make a column
             flex-direction: column;
 
 
@@ -619,7 +593,6 @@
             .written{
                 width: 100%;
             }
-        }
     }
 
     // comments section
@@ -668,7 +641,6 @@
     }
 }
 
-
 @media (max-width: 320px){
 
     //                  BASIC STYLES
@@ -680,29 +652,27 @@
     //                  HEADER STYLES
 
     // home header styles
-    .home{
-        .wrapper{
-            .mainTitle{
-                bottom: -80px;
-                // change the size of the h1
-                h1{
-                    font-size: 5.5rem;
-                }
-            }
 
-            .headerImageContainer{
-                width: 60%;
-                right: -45px;
-            }
+    // change position and size of h1
+    .home .mainTitle{
+        bottom: -80px;
+        // change the size of the h1
+        h1{
+            font-size: 5.5rem;
         }
     }
 
+    // change width and position
+    .home .headerImageContainer{
+        width: 60%;
+        right: -45px;
+    }
+
     //                  HOME STYLES
-    // icon links section
-    .iconLinks{
-        ul{
-            // make width bigger and add more padding left
-            li{
+
+    // make width bigger and add more padding left
+    .iconLinks ul{
+        li{
                 width: 100%;
                 padding-left: 20%;
 
@@ -711,7 +681,6 @@
                 top: -5px;
                 }
             }
-        }
     }
 
     // banner section
@@ -721,7 +690,6 @@
 
     // images section  
     .images{
-        // change to the column
         ul{
 
             // change width
@@ -736,26 +704,21 @@
     //                  BLOG STYLES
 
 
-     // side info styles
-    .blogPage .sideInfo{
-
-
-        // change the styles and width
-        .recentPosts{
-            padding-left: 30px;
+    // change the size and width
+    .blogPage .recentPosts{
+        padding-left: 30px;
 
             // change style
             a{
                 font-size: 1.4rem;
             }
-
-        }
     }
 
 
     //              CONTACT STYLES
 
-    .contactPage .contactInfo{
+    // contact info section
+    .contactInfo{
         // make icons column
         ul{
             flex-direction: column;

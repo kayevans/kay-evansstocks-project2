@@ -413,25 +413,24 @@ li {
   position: relative;
 }
 
-.home .wrapper .mainTitle {
+.home .mainTitle {
   position: relative;
-  width: 50%;
   margin-left: 3%;
   z-index: 10;
 }
 
-.home .wrapper .mainTitle .circleTextContainer {
+.home .mainTitle .circleTextContainer {
   position: absolute;
   width: 150px;
   top: -20px;
   left: -50px;
 }
 
-.home .wrapper .mainTitle h1 {
+.home .mainTitle h1 {
   font-size: 12rem;
 }
 
-.home .wrapper .headerImageContainer {
+.home .headerImageContainer {
   position: relative;
   width: 38%;
   right: 3%;
@@ -653,21 +652,21 @@ form button {
           justify-content: space-between;
 }
 
-.journey .wrapper .sophieContainer {
+.journey .sophieContainer {
   width: 25%;
   height: auto;
 }
 
-.journey .wrapper .sophieContainer img {
+.journey .sophieContainer img {
   -webkit-box-shadow: 15px 18px #F6A823;
           box-shadow: 15px 18px #F6A823;
 }
 
-.journey .wrapper .content {
+.journey .content {
   width: 65%;
 }
 
-.journey .wrapper .content p {
+.journey .content p {
   padding: 15px 0 40px;
 }
 
@@ -726,60 +725,60 @@ form button {
   width: 32%;
 }
 
-.blogPage .sideInfo .about {
+.blogPage .about {
   background-color: white;
   padding: 40px 30px 30px;
   margin-bottom: 20px;
 }
 
-.blogPage .sideInfo .about h3 {
+.blogPage .about h3 {
   padding: 20px 0 10px;
 }
 
-.blogPage .sideInfo .about a {
+.blogPage .about a {
   color: #285E64;
   font-weight: bold;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.blogPage .sideInfo .about a:hover {
+.blogPage .about a:hover {
   color: #A82706;
 }
 
-.blogPage .sideInfo .about a:focus {
+.blogPage .about a:focus {
   color: #A82706;
 }
 
-.blogPage .sideInfo .recentPosts {
+.blogPage .recentPosts {
   background-color: white;
   padding: 40px 30px 30px;
 }
 
-.blogPage .sideInfo .recentPosts h3 {
+.blogPage .recentPosts h3 {
   padding: 0 0 10px;
 }
 
-.blogPage .sideInfo .recentPosts ul {
+.blogPage .recentPosts ul {
   margin-left: 10px;
 }
 
-.blogPage .sideInfo .recentPosts ul li::before {
+.blogPage .recentPosts ul li::before {
   content: '•';
   color: #F6A823;
   margin-right: 15px;
 }
 
-.blogPage .sideInfo .recentPosts ul a {
+.blogPage .recentPosts ul a {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.blogPage .sideInfo .recentPosts ul a:hover {
+.blogPage .recentPosts ul a:hover {
   color: #A82706;
 }
 
-.blogPage .sideInfo .recentPosts ul a:focus {
+.blogPage .recentPosts ul a:focus {
   color: #A82706;
 }
 
@@ -892,12 +891,12 @@ form button {
   width: 32%;
 }
 
-.contactPage .contactInfo {
+.contactInfo {
   background-color: white;
   padding: 40px 30px 30px;
 }
 
-.contactPage .contactInfo ul {
+.contactInfo ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -907,29 +906,29 @@ form button {
   font-size: 2.4rem;
 }
 
-.contactPage .contactInfo ul a {
+.contactInfo ul a {
   padding-right: 30px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.contactPage .contactInfo ul a:hover {
+.contactInfo ul a:hover {
   color: #A82706;
 }
 
-.contactPage .contactInfo address {
+.contactInfo address {
   padding-top: 10px;
   font-style: normal;
 }
 
-.contactPage .contactInfo address a.email {
+.contactInfo address a.email {
   font-weight: bold;
   font-size: 2rem;
   display: block;
   padding-bottom: 10px;
 }
 
-.contactPage .contactInfo address a:nth-of-type(2) {
+.contactInfo address a:nth-of-type(2) {
   display: block;
 }
 
@@ -938,10 +937,10 @@ form button {
 }
 
 @media (max-width: 1020px) {
-  .home .wrapper .mainTitle h1 {
+  .home .mainTitle h1 {
     font-size: 10rem;
   }
-  .home .wrapper .headerImageContainer {
+  .home .headerImageContainer {
     width: 40%;
   }
   .blogPosts {
@@ -985,11 +984,11 @@ form button {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .journey .wrapper .sophieContainer {
+  .journey .sophieContainer {
     width: 60%;
     padding-left: 10%;
   }
-  .journey .wrapper .content {
+  .journey .content {
     width: 90%;
     padding: 50px 0 0 30%;
   }
@@ -1015,7 +1014,7 @@ form button {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .blogPage .sideInfo .about {
+  .blogPage .about {
     background-color: #F6A823;
     margin-bottom: 0;
     width: 60%;
@@ -1028,24 +1027,24 @@ form button {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .blogPage .sideInfo .about .sophieContainer {
+  .blogPage .about .sophieContainer {
     width: 35%;
   }
-  .blogPage .sideInfo .about .written {
+  .blogPage .about .written {
     width: 58%;
   }
-  .blogPage .sideInfo .about .written h3 {
+  .blogPage .about .written h3 {
     padding-top: 10%;
   }
-  .blogPage .sideInfo .recentPosts {
+  .blogPage .recentPosts {
     background-color: #F6A823;
     width: 40%;
     font-size: 1.4rem;
   }
-  .blogPage .sideInfo .recentPosts h3 {
+  .blogPage .recentPosts h3 {
     padding-top: 10%;
   }
-  .blogPage .sideInfo .recentPosts ul li::before {
+  .blogPage .recentPosts ul li::before {
     color: #2C2C2C;
   }
   .blogPage .mainContent {
@@ -1061,12 +1060,12 @@ form button {
     width: 100%;
     text-align: center;
   }
-  .contactPage .contactInfo ul {
+  .contactInfo ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .contactPage .contactInfo ul a {
+  .contactInfo ul a {
     padding: 0 20px;
   }
   .contactPage .mainContent {
@@ -1123,7 +1122,7 @@ form button {
   .topNav .titleRes:hover {
     color: #F0EFED;
   }
-  .home .wrapper .mainTitle h1 {
+  .home .mainTitle h1 {
     font-size: 8rem;
   }
   .whoIsSophie {
@@ -1159,26 +1158,26 @@ form button {
             flex-direction: column;
     background-color: inherit;
   }
-  .blogPage .sideInfo .about {
+  .blogPage .about {
     width: 100%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .blogPage .sideInfo .about .sophieContainer {
+  .blogPage .about .sophieContainer {
     width: 30%;
   }
-  .blogPage .sideInfo .about .written {
+  .blogPage .about .written {
     width: 55%;
   }
-  .blogPage .sideInfo .recentPosts {
+  .blogPage .recentPosts {
     width: 100%;
     padding-left: 50px;
     margin-top: 20px;
   }
-  .blogPage .sideInfo .recentPosts h3 {
+  .blogPage .recentPosts h3 {
     padding-top: 0;
   }
-  .blogPage .sideInfo .recentPosts a {
+  .blogPage .recentPosts a {
     font-size: 1.6rem;
   }
 }
@@ -1190,20 +1189,20 @@ form button {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .home .wrapper .mainTitle {
+  .home .mainTitle {
     position: relative;
     bottom: -100px;
     left: 20px;
     width: 100%;
   }
-  .home .wrapper .mainTitle h1 {
+  .home .mainTitle h1 {
     font-size: 7rem;
   }
-  .home .wrapper .mainTitle .circleTextContainer {
+  .home .mainTitle .circleTextContainer {
     width: 110px;
     left: -40px;
   }
-  .home .wrapper .headerImageContainer {
+  .home .headerImageContainer {
     width: 45%;
     right: -100px;
     top: 45px;
@@ -1220,10 +1219,10 @@ form button {
   .blogPosts ul li:nth-of-type(4) {
     left: -100px;
   }
-  .journey .wrapper .sophieContainer {
+  .journey .sophieContainer {
     padding-left: 0;
   }
-  .journey .wrapper .content {
+  .journey .content {
     padding-left: 15%;
   }
   .images ul {
@@ -1262,14 +1261,14 @@ form button {
     font-size: 4.5rem;
     bottom: -35px;
   }
-  .home .wrapper .mainTitle {
+  .home .mainTitle {
     bottom: -85px;
     left: 20px;
   }
-  .home .wrapper .mainTitle h1 {
+  .home .mainTitle h1 {
     font-size: 6rem;
   }
-  .home .wrapper .headerImageContainer {
+  .home .headerImageContainer {
     width: 50%;
     right: -80px;
     top: 40px;
@@ -1305,27 +1304,28 @@ form button {
   }
   .iconLinks ul li i {
     left: -30px;
+    top: -5px;
   }
-  .journey .wrapper .sophieContainer {
+  .journey .sophieContainer {
     width: 100%;
   }
-  .journey .wrapper .content {
+  .journey .content {
     padding-left: 0;
     text-align: center;
   }
   .blogPage h2 {
     font-size: 2.4rem;
   }
-  .blogPage .sideInfo .about {
+  .blogPage .about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .blogPage .sideInfo .about .sophieContainer {
+  .blogPage .about .sophieContainer {
     width: 100%;
   }
-  .blogPage .sideInfo .about .written {
+  .blogPage .about .written {
     width: 100%;
   }
   .blogPage .comments .commentOne {
@@ -1407,13 +1407,13 @@ form button {
     font-size: 4rem;
     bottom: -30px;
   }
-  .home .wrapper .mainTitle {
+  .home .mainTitle {
     bottom: -80px;
   }
-  .home .wrapper .mainTitle h1 {
+  .home .mainTitle h1 {
     font-size: 5.5rem;
   }
-  .home .wrapper .headerImageContainer {
+  .home .headerImageContainer {
     width: 60%;
     right: -45px;
   }
@@ -1431,19 +1431,19 @@ form button {
   .images ul li {
     width: 100%;
   }
-  .blogPage .sideInfo .recentPosts {
+  .blogPage .recentPosts {
     padding-left: 30px;
   }
-  .blogPage .sideInfo .recentPosts a {
+  .blogPage .recentPosts a {
     font-size: 1.4rem;
   }
-  .contactPage .contactInfo ul {
+  .contactInfo ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .contactPage .contactInfo ul a {
+  .contactInfo ul a {
     display: inline-block;
     padding: 10px 20px;
   }

@@ -43,7 +43,7 @@
     display: none;
 }
 
-// overall headers
+//                                  overall headers
 .generic{
     height: 60vh;
     position: relative;
@@ -70,7 +70,7 @@
     background-size: cover;
 }
 
-// home header 
+//                                   home header 
 .home{
     background-color: #F6A823;
 
@@ -81,37 +81,37 @@
         align-items: center;
         position: relative;
 
-        // position relative for the main title container
-        .mainTitle{
-            position: relative;
-            width: 50%;
-            margin-left: 3%;
-            z-index: 10;
-
-            // position it to the main title container
-            .circleTextContainer{
-                position: absolute;
-                width: 150px;
-                top: -20px;
-                left: -50px;
-            }
-
-            // change font size
-            h1{
-                font-size: 12rem;
-            }
-        }
-
-        // positon it relative to the main header container | change the position and add box shadow
-        .headerImageContainer{
-            position: relative;
-            width: 38%;
-            right: 3%;
-            top: 45px;
-            box-shadow: 18px 18px white;
-
-        }
     }
+}
+
+// position relative for the main title container
+.home .mainTitle{
+    position: relative;
+    margin-left: 3%;
+    z-index: 10;
+
+    // position it to the main title container
+    .circleTextContainer{
+        position: absolute;
+        width: 150px;
+        top: -20px;
+        left: -50px;
+    }
+
+    // change font size
+    h1{
+        font-size: 12rem;
+    }    
+}
+
+// positon header image relative to the main header container | change the position and add box shadow
+.home .headerImageContainer{
+    position: relative;
+    width: 38%;
+    right: 3%;
+    top: 45px;
+    box-shadow: 18px 18px white;
+
 }
 
 

@@ -33,10 +33,11 @@
 // side info section
 .blogPage .sideInfo{
     width: 32%;
+}
 
-    // the about section styles
-    .about{
-        @include sectionStyles;
+// the about section styles
+.blogPage .about{
+    @include sectionStyles;
         margin-bottom: 20px;
 
         // add spacing
@@ -58,11 +59,11 @@
                 color: $secondary;
             }
         }
-    }
+}
 
-    // the recent post section styles
-    .recentPosts{
-        @include sectionStyles;
+// the recent post section styles
+.blogPage .recentPosts{
+    @include sectionStyles;
 
         h3{
             padding: 0 0 10px;
@@ -92,9 +93,7 @@
                 }
             }
         }
-    }
 }
-
 
 // change the width
 .blogPage .mainContent{
