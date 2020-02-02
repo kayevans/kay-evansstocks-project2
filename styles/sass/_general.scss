@@ -20,6 +20,7 @@ h1,
     font-family: $headingFont;
 }
 
+// make uppercase
 h1,
 h2,
 h3,
@@ -27,22 +28,28 @@ h3,
     text-transform: uppercase;
 }
 
-// h2 styles
-h2{
-    font-size: 3.4rem;
-    letter-spacing: $headerSpacing;
+// apply letter spacing to headings
+h2,
+h3{
+    letter-spacing: $headerSpacing; 
 }
 
-// h3 styles
+// h2 size
+h2{
+    font-size: 3.4rem;
+    
+}
+
+// h3 size
 h3{
     font-size: 2.4rem;
-    letter-spacing: $headerSpacing;
 }
 
 
 // remove default link styles
 a{
     text-decoration: none;
+    // inherit from the body
     color: inherit;
 }
 
@@ -53,9 +60,12 @@ li{
 
 // button styles
 .buttonStyles{
+    // add button styles
     @include button;
+    // add transition styles
     @include transition;
 
+    // add hover and focus states
     &:hover{
         background-color: $secondaryFont;
         color: $background; 

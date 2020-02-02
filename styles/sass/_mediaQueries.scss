@@ -35,6 +35,7 @@
             li:first-of-type{
                 width: 65%;
                 left: -120px;
+                // change size of box shadow
                 box-shadow: 15px 20px $secondary;
                 
             }
@@ -57,6 +58,7 @@
                 margin-bottom: 100px;
                 width: 65%;
                 left: -120px;
+                // change the size of the box shadow
                 box-shadow: 15px 20px $primary;
                 
             }
@@ -66,6 +68,7 @@
     // journey section
     .journey{
         .wrapper{
+            // make into a column
             flex-direction: column;
         }
     }
@@ -91,7 +94,7 @@
         height: 40vh;
     }
 
-    // make into a column
+    // make into a column and switch order
     .blogPage main{
         .wrapper{
             flex-direction: column-reverse;
@@ -101,6 +104,7 @@
     // side info styles
     .blogPage .sideInfo{
         margin-top: 20px;
+        // make take up full width
         width: 100%;
         background-color: $primary;
 
@@ -137,8 +141,8 @@
     // change the styles and width
     .blogPage .recentPosts{
         background-color: $primary;
-            width: 40%;
-            font-size: 1.4rem;
+        width: 40%;
+        font-size: 1.4rem;
 
             // add padding to the top
             h3{
@@ -160,14 +164,14 @@
 
     //                  CONTACT STYLES
 
-    // make it into a column
+    // make it into a column and switch order
     .contactPage main{
         .wrapper{
             flex-direction: column-reverse;
         }
     }
 
-    // change the width
+    // change the width and align text center
     .contactPage .sideInfo{
         width: 100%;
         text-align: center;
@@ -200,7 +204,7 @@
 
     // nav styles
 
-    // show the humburger nav
+    // show the humburger nav and style
     .topNav .hamburgerButton{
         display: block;
         font-size: 4.5rem;
@@ -210,25 +214,33 @@
         z-index: 1;
     }
 
-    // hide the nav
+    // nav styles
     .topNav ul{
-        display: none;
-    }
-
-    // when checked show the nav and nav styles
-    .topNav .hamburgerCheck:checked + ul{
+        // change display to block
         display: block;
-        z-index: 20;
         position: fixed;
         width: 50%;
         top: 0;
-        left: 0;
+        // move it left until checked
+        left: -50%;
         bottom: 0;
+
+        // styles
         background-color: $secondary;
         color: $background;
         text-align: center;
         font-size: 3rem;
         padding-top: 80px;
+        z-index: 20;
+
+        // apply transition
+        @include transition;
+
+
+        // hide the title in the list
+        a.title{
+            display: none;
+        }
 
         // edit the padding
         a{
@@ -243,18 +255,19 @@
             }
         }
 
-        // hide the title in the list
-        a.title{
-            display: none;
-        }
     }
 
+    // when checked show the nav by sliding to the left
+    .topNav .hamburgerCheck:checked + ul{
+        left: 0;   
+    }
 
     // show the title
     .topNav .titleRes{
         display: inline-block;
         padding: 10px 0;
         margin: 0;
+        // apply the transitions
         @include transition;
 
         &:hover{
@@ -266,7 +279,7 @@
     .home .mainTitle{
         // change the size of the h1
         h1{
-            font-size: 8rem;
+            font-size: 7rem;
         }
     }
 
@@ -281,7 +294,7 @@
     // make into a column and center
     .iconLinks ul{
         flex-direction: column;
-            align-items: center;
+        align-items: center;
 
             // make width bigger and add more padding left
             li{
@@ -298,10 +311,12 @@
     // images section  
     .images{
         ul{
+            // change size based on new margin
             li{
                 width: calc((100% - 20px)/3);
             }
 
+            // change margin
             li:nth-of-type(2){
                 margin: 0 10px;
             }
@@ -320,7 +335,7 @@
     // about section styles
     .blogPage .about{
         width: 100%;
-            justify-content: space-around;
+        justify-content: space-around;
 
             // change the size of the containers
             .sophieContainer{
@@ -335,8 +350,8 @@
     // change position and width
     .blogPage .recentPosts{
         width: 100%;
-            padding-left: 50px;
-            margin-top: 20px;
+        padding-left: 50px;
+        margin-top: 20px;
 
             // add padding to the top
             h3{
@@ -357,7 +372,7 @@
 
     // home header styles
     .home{
-        // padding-bottom: 100px;
+        // make them into a column
         .wrapper{
             flex-direction: column;  
         }
@@ -381,7 +396,7 @@
         }
     }
 
-    // change size and position
+    // change size and position of the image
     .home .headerImageContainer{
         width: 45%;
         right: -100px;
@@ -400,8 +415,9 @@
                 
             }
 
+            // change the position
             li:first-of-type{
-                left: -100px;   
+                left: -80px;   
             }
 
             // change the padding
@@ -409,8 +425,9 @@
                 padding-left: 5%;
             }
 
+            // change the position
             li:nth-of-type(4){
-                left: -100px;
+                left: -80px;
                 
             }
         }
@@ -447,9 +464,27 @@
         }
     }
 
+    //              BLOG STYLES
+
+        // side info styles
+    .blogPage .about{
+        // make a column
+        flex-direction: column;
+
+
+            // change the size of the containers
+            .sophieContainer{
+                width: 100%;
+            }
+
+            .written{
+                width: 100%;
+            }
+    }
+
     //             FORM STYLES
 
-    // change the widths
+    // change the widths of two input
     form input[type="email"],
     form input[type="text"]{
         width: 100%;
@@ -532,6 +567,7 @@
                 
             }
 
+            // change position and size
             li:first-of-type{
                 left: 0px;
                 width: 100%;   
@@ -543,6 +579,7 @@
                 text-align: center;
             }
 
+            // change position and size
             li:nth-of-type(4){
                 left: 0px;
                 width: 100%;  
@@ -556,6 +593,7 @@
                 width: 90%;
                 padding-left: 10%;
 
+                // change position of the i
                 i{
                 left: -30px;
                 top: -5px;
@@ -572,6 +610,7 @@
     .journey .content{
         padding-left: 0;
         text-align: center;
+        width: 100%;
     }
 
     //              BLOG PAGE
@@ -579,26 +618,10 @@
         font-size: 2.4rem;
     }
 
-    // side info styles
-    .blogPage .about{
-        // make a column
-            flex-direction: column;
-
-
-            // change the size of the containers
-            .sophieContainer{
-                width: 100%;
-            }
-
-            .written{
-                width: 100%;
-            }
-    }
-
     // comments section
     .blogPage .comments{
 
-        // comment sections
+        // comment one sections
         .commentOne{
             // change the styles of the section and make them take full width
             @include commentSections(100%, 100%);
@@ -639,6 +662,23 @@
     .contactPage .wrapper{
         width: 90%;
     }
+
+
+    //              CONTACT STYLES
+
+    // contact info section
+    .contactInfo{
+        // make icons column
+        ul{
+            flex-direction: column;
+
+            // add more padding around icons
+            a{
+                display: inline-block;
+                padding: 10px 20px;
+            }
+        }
+    }
 }
 
 @media (max-width: 320px){
@@ -678,7 +718,6 @@
 
                 i{
                 left: -10px;
-                top: -5px;
                 }
             }
     }
@@ -704,36 +743,15 @@
     //                  BLOG STYLES
 
 
-    // change the size and width
+    // change position 
     .blogPage .recentPosts{
         padding-left: 30px;
 
-            // change style
+            // change size
             a{
                 font-size: 1.4rem;
             }
     }
-
-
-    //              CONTACT STYLES
-
-    // contact info section
-    .contactInfo{
-        // make icons column
-        ul{
-            flex-direction: column;
-
-            // add more padding around icons
-            a{
-                display: inline-block;
-                padding: 10px 20px;
-            }
-        }
-    }
-
-
-
-
 
 
 }

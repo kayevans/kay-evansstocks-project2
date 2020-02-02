@@ -2,6 +2,7 @@
 
 .contactPage address .email:hover,
 .contactPage address a:nth-of-type(2):hover{
+        // apply transition
         @include transition;
         color: $secondary;
 }
@@ -25,6 +26,7 @@
 
 // include the section padding styles
 .contactInfo{
+    // apply the blog section styles
     @include sectionStyles;
 
     // flex the icons

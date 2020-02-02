@@ -3,6 +3,7 @@
     padding: 80px 0 130px;
     background-color: $background;
 
+    // add spacing
     h2{
         padding-bottom: 10px;
     }
@@ -19,6 +20,7 @@
 
     // flex the lis 
     ul{
+        // apply flex
         @include flex;
         align-items: center;
         justify-content: space-between;
@@ -34,10 +36,11 @@
 
         }
 
-        // position the photo
+        // position the first photo
         li:first-of-type{
             position: relative;
             top: -65px;
+            // add double box shadow to reach the side
             box-shadow: 15px 20px $secondary, -200px 20px $secondary;
 
         }
@@ -53,9 +56,11 @@
             text-align: right;
         }
 
+        // position the second photo
         li:last-of-type{
             position: relative;
             top: 45px;
+            // add two box shadows
             box-shadow: 15px 20px $primary, 200px 20px $primary;
         }
     }
@@ -70,6 +75,7 @@
 
 // flex the items
 .iconLinks ul{
+    // apply flex
     @include flex;
         justify-content: space-between;
 
@@ -91,13 +97,16 @@
                 border-radius: 50%;
             }
 
+            // add focus and hover states
             a:hover{
                 color: $secondary;
+                // apply transition
                 @include transition;
             }
 
             a:focus{
                 color: $secondary;
+                // apply transition
                 @include transition;
             }
 
@@ -125,15 +134,15 @@
 
     // flex the divs
     .wrapper{
+        // apply flex
         @include flex;
         justify-content: space-between; 
     }
 }
 
- // add width to the container | add box shadow
+ // add width to the photo  | add box shadow
 .journey .sophieContainer{
     width: 25%;
-    height: auto;
 
             // add box shadow on img
             img{
@@ -141,7 +150,7 @@
             }
 }
 
-// add width
+// add width to the content
 .journey .content{
     width: 65%;
 
@@ -155,12 +164,15 @@
 .images{
     padding: 80px 0;
     ul{
+        // apply flex
         @include flex;
 
+        // make all equal accounting for the margin
         li{
             width: calc((100% - 60px)/3);
         }
 
+        // add margin only to the second
         li:nth-of-type(2){
             margin: 0 30px;
         }

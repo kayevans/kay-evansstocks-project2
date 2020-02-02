@@ -277,14 +277,17 @@ h3,
   text-transform: uppercase;
 }
 
+h2,
+h3 {
+  letter-spacing: 0.1rem;
+}
+
 h2 {
   font-size: 3.4rem;
-  letter-spacing: 0.1rem;
 }
 
 h3 {
   font-size: 2.4rem;
-  letter-spacing: 0.1rem;
 }
 
 a {
@@ -342,7 +345,7 @@ li {
 }
 
 .topNav ul a {
-  display: block;
+  display: inline-block;
   padding: 2px 15px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -654,7 +657,6 @@ form button {
 
 .journey .sophieContainer {
   width: 25%;
-  height: auto;
 }
 
 .journey .sophieContainer img {
@@ -1084,33 +1086,35 @@ form button {
     z-index: 1;
   }
   .topNav ul {
-    display: none;
-  }
-  .topNav .hamburgerCheck:checked + ul {
     display: block;
-    z-index: 20;
     position: fixed;
     width: 50%;
     top: 0;
-    left: 0;
+    left: -50%;
     bottom: 0;
     background-color: #A82706;
     color: #F0EFED;
     text-align: center;
     font-size: 3rem;
     padding-top: 80px;
+    z-index: 20;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
-  .topNav .hamburgerCheck:checked + ul a {
+  .topNav ul a.title {
+    display: none;
+  }
+  .topNav ul a {
     padding: 30px 15px;
   }
-  .topNav .hamburgerCheck:checked + ul a:hover {
+  .topNav ul a:hover {
     color: #F6A823;
   }
-  .topNav .hamburgerCheck:checked + ul a:focus {
+  .topNav ul a:focus {
     color: #F6A823;
   }
-  .topNav .hamburgerCheck:checked + ul a.title {
-    display: none;
+  .topNav .hamburgerCheck:checked + ul {
+    left: 0;
   }
   .topNav .titleRes {
     display: inline-block;
@@ -1123,7 +1127,7 @@ form button {
     color: #F0EFED;
   }
   .home .mainTitle h1 {
-    font-size: 8rem;
+    font-size: 7rem;
   }
   .whoIsSophie {
     text-align: center;
@@ -1211,13 +1215,13 @@ form button {
     padding-left: 5%;
   }
   .blogPosts ul li:first-of-type {
-    left: -100px;
+    left: -80px;
   }
   .blogPosts ul li.rightSpaced {
     padding-left: 5%;
   }
   .blogPosts ul li:nth-of-type(4) {
-    left: -100px;
+    left: -80px;
   }
   .journey .sophieContainer {
     padding-left: 0;
@@ -1240,6 +1244,18 @@ form button {
   .images ul li {
     width: 80%;
     margin-bottom: 20px;
+  }
+  .blogPage .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogPage .about .sophieContainer {
+    width: 100%;
+  }
+  .blogPage .about .written {
+    width: 100%;
   }
   form input[type="email"],
   form input[type="text"] {
@@ -1312,21 +1328,10 @@ form button {
   .journey .content {
     padding-left: 0;
     text-align: center;
+    width: 100%;
   }
   .blogPage h2 {
     font-size: 2.4rem;
-  }
-  .blogPage .about {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .blogPage .about .sophieContainer {
-    width: 100%;
-  }
-  .blogPage .about .written {
-    width: 100%;
   }
   .blogPage .comments .commentOne {
     display: -webkit-box;
@@ -1400,6 +1405,16 @@ form button {
   .contactPage .wrapper {
     width: 90%;
   }
+  .contactInfo ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactInfo ul a {
+    display: inline-block;
+    padding: 10px 20px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1423,7 +1438,6 @@ form button {
   }
   .iconLinks ul li i {
     left: -10px;
-    top: -5px;
   }
   .banner {
     height: 200px;
@@ -1436,15 +1450,5 @@ form button {
   }
   .blogPage .recentPosts a {
     font-size: 1.4rem;
-  }
-  .contactInfo ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contactInfo ul a {
-    display: inline-block;
-    padding: 10px 20px;
   }
 }

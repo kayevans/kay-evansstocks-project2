@@ -43,9 +43,13 @@
                 <!-- wrapper begins -->
                 <div class="wrapper">
                     <!-- put inside div to position together -->
+
+                        <!-- main title -->
                         <div class="mainTitle">
                                 <div class="circleTextContainer ">
-                                    <img src="./assets/circle-text.png" alt="It's all about">
+                                    <img src="./assets/circle-text.png" alt="It's all about" aria-label="It's all about">
+                                    <!-- to make accesibily since words in an image -->
+                                    <p class="sr-only">It's all about</p>
                                 </div>
                                 <h1>Sophie</h1>
                         </div>
@@ -136,6 +140,8 @@
 
         <!-- banner image section begin -->
         <section class="banner">
+            <!-- for non sighted users -->
+            <p class="sr-only">Rows of orange theatre chairs in auditorium</p>
         </section>
         <!-- banner image section ends -->
 

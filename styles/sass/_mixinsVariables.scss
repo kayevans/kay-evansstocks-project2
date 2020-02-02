@@ -12,7 +12,7 @@ $background: #F0EFED;
 $baseFont: 'Roboto', sans-serif;
 $headingFont: 'Lora', serif;
 
-//styles
+// basic styles
 $headerSpacing: 0.1rem;
 
 // mixins
@@ -32,7 +32,7 @@ $headerSpacing: 0.1rem;
     padding: 10px 20px;
 }
 
-// transitions
+// hover transitions
 @mixin transition {
     transition: all 0.5s ease;
 }

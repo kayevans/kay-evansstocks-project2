@@ -14,13 +14,17 @@ form textarea::placeholder{
 // general styles for the inputs
 form input[type="email"],
 form input[type="text"]{
+    // make width equal and float left
     width: calc(100%/2 - 5px);
     float: left;
+    // add spacing
     padding: 20px 30px;
     margin: 0 0 15px;
+    // add border
     border: 1px solid white;
 }
 
+// add border for focus states
 form input[type="email"]:focus,
 form input[type="text"]:focus{
     border-color: $primary;
@@ -33,11 +37,17 @@ form input[type="text"]{
 
 // text area styles
 form textarea{
+    // clear from previous floats
     clear: both;
     display: block;
+    
+    // remove ability to resize
     resize: none;
+
     width: 100%;
     border: 1px solid white;
+
+    // add spacing
     padding: 30px 30px 0;
     margin-bottom: 15px;
 }
@@ -47,6 +57,7 @@ form textarea:focus{
     border-color: $primary;
 }
 
+// change the size of the button, remove the default border
 form button{
     width: 100%;
     border: none;

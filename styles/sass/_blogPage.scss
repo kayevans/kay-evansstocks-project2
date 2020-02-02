@@ -25,6 +25,7 @@
 
     // flex the two main sections beside each other
     .wrapper{
+        // apply flex
         @include flex;
         justify-content: space-between;
     }
@@ -37,6 +38,7 @@
 
 // the about section styles
 .blogPage .about{
+    // apply the blog section styles
     @include sectionStyles;
         margin-bottom: 20px;
 
@@ -49,8 +51,10 @@
         a{
             color: $secondaryFont;
             font-weight: bold;
+            // apply the transition
             @include transition;
 
+            // apply hover and focus states
             &:hover{
                 color: $secondary;
             }
@@ -63,6 +67,7 @@
 
 // the recent post section styles
 .blogPage .recentPosts{
+    // apply the blog section styles
     @include sectionStyles;
 
         h3{
@@ -101,7 +106,9 @@
 
     // genneral main post styles
     .mainPost{
+        // apply the blog section styles
         @include sectionStyles;
+        // apply the border styles
         @include blogBorder;
         margin-bottom: 30px;
 
